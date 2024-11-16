@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body.morning {
+            background-color: #FFFAE3;
+            color: #333;
+        }
+body.afternoon {
+            background-color: #FFD1A9;
+            color: #333;
+        }
+body.evening {
+            background-color: #2C3E50;
+            color: #FFF;
+        }
+body.special-time {
+            background-color: #8A2BE2;
+            color: #FFF;
+        }
+
+
+
+.bg-container:before{
+	background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	height: calc(100% + 80px);
+    left: 0;
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+#header{
+display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 10000;
+    font-family: "Arial";
+    transition: height .3s ease-in;
+}
+header {
+    background: #ffffff !important;
+}
