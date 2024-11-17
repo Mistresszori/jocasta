@@ -5,13 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 <title>HOME</title>
 <script type="text/javascript" src="scripts/change-bg.js"></script>
+<script type="text/javascript" src="scripts/gettempo.js"></script>
 	
 <link rel="stylesheet" type="text/css" href="css/theme.css"/>	
 <link rel="stylesheet" type="text/css" href="css/clock.css"/>	
+<link rel="stylesheet" type="text/css" href="css/tempo.css"/>	
 </head>
 
 <body onload="changeContentByExactTime()">
 	<h1 id="greeting">Olá!</h1>
+	
+<div id="weatherDiv"> <div class="weather-container">
+        <h1 class="location">Carregando localização...</h1>
+        <div class="weather-info">
+            <p class="temperature">--°C</p>
+            <p class="condition">Carregando clima...</p>
+        </div>
+    </div></div>
+    <script src="gettempo.js"></script>
+	
 	
 	<div class="clock">
                 <div class="hours">

@@ -1,0 +1,68 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Container principal */
+.weather-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+/* Localização */
+.location {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Informações do clima */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Temperatura */
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #2e26ff; /* Cor padrão */
+}
+
+/* Condição */
+.condition {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Estilização adicional com base na temperatura */
+.hot {
+    background-color: #ffcccb; /* Cor de fundo quente */
+    color: #b22222;
+}
+
+.mild {
+    background-color: #d3e9ff; /* Cor de fundo amena */
+    color: #4682b4;
+}
+
+.cold {
+    background-color: #b0e0e6; /* Cor de fundo fria */
+    color: #1e90ff;
+}
