@@ -23,14 +23,12 @@ body.afternoon {
             color: #333;
         }
 body.evening {
-            background: rgb(2,0,36);
-            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-            color: #FFF;
-	        height: auto;
+            background: #000032;
+            color: #000;
         }
 body.special-time {
             background-color: #8A2BE2;
-            color: #FFF;
+            color: #000;
         }
 
 
@@ -70,7 +68,21 @@ div.menu{
 header div.olapessoa {
 		margin-top: 4px;
 	margin-left: 20px;
+	position: absolute;
 	}
+
+header div.navegacao{
+	position: absolute;
+	margin-top: 4px;
+	text-align: center;
+}
+
+header div.relogio{
+	position: absolute;
+	margin-top: 10px;
+	right: 20px;
+	height: 60px;
+}
 
 
 header nav ul{
@@ -86,16 +98,18 @@ header nav ul{
     header div.banner{
         z-index: 1;
         width: 100vw;
-     
+     	height: 65px;
         background-size:cover;
         background-position-y: center;
         background-position-x: right;
         display: flex;
+		background-color: #fff!important;
     }
 
 	header div.olapessoa h1{
 		font-size: 20px;
 	}
+	
 	
     
 }
