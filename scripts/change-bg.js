@@ -17,13 +17,13 @@ function initJS(){
                 greeting.textContent = 'Hora Especial: 9h30!';
             } else if (hour >= 6 && hour < 12) {
                 body.className = 'morning';
-                greeting.textContent = 'Bom dia!';
+                greeting.textContent = 'Bom dia';
             } else if (hour >= 12 && hour < 18) {
                 body.className = 'afternoon';
-                greeting.textContent = 'Boa tarde!';
+                greeting.textContent = 'Boa tarde';
             } else {
                 body.className = 'evening';
-                greeting.textContent = 'Boa noite!';
+                greeting.textContent = 'Boa noite';
             }
         }
 

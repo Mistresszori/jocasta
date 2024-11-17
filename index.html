@@ -12,9 +12,22 @@
 <link rel="stylesheet" type="text/css" href="css/tempo.css"/>	
 </head>
 
-<body onload="changeContentByExactTime()">
-	<h1 id="greeting">Olá!</h1>
-	
+<body onload="changeContentByExactTime()">	
+<header>     
+      <div class="banner" id="banner">
+        <div class="menu">
+          <div class="olapessoa"><h1 id="greeting">Olá!</h1></div>
+          <div>
+            <nav><ul>
+              <li><a href="#">nav 1</a></li>
+              <li><a href="#">nav 2</a></li>
+              <li><a href="#">nav 3</a></li>
+            </ul></nav>
+          </div>
+      </div>
+      </div>
+    </header>	
+<main>	
 <div id="weatherDiv"> <div class="weather-container">
         <h1 class="location">Carregando localização...</h1>
         <div class="weather-info">
@@ -54,6 +67,9 @@
                 </div>
               </div>
 	
-<script type="text/javascript" src="scripts/clock.js"></script>	
+<script type="text/javascript" src="scripts/clock.js"></script>
+	</main>
+	<footer></footer>
+	
 </body>
 </html>
