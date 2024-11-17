@@ -2,7 +2,7 @@
 .weather-container {
     background-color: #ffffff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    border-radius: 0px 0px 0px 15px;
     text-align: center;
     padding: 20px;
     max-width: 350px;

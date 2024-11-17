@@ -2,11 +2,11 @@
 /* CSS Document */
 
 .clock {
-  height: 20vh;
-  color: white;
-  font-size: 22vh;
+  height: 40px;
+  color: #000;
+  font-size: 40px;
   font-family: sans-serif;
-  line-height: 20.4vh;
+  line-height: 42px;
   display: flex;
   position: relative;
   /*background: green;*/
@@ -16,23 +16,22 @@
 .clock::before, .clock::after {
   content: '';
   width: 7ch;
-  height: 3vh;
-  background: linear-gradient(to top, transparent, black);
+  height: 32.4px; /* 3vh converted to pixels */
   position: absolute;
   z-index: 2;
 }
 
 .clock::after {
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, black);
 }
+
 
 .clock > div {
   display: flex;
 }
 
 .tick {
-  line-height: 17vh;
+  line-height: 36px;
 }
 
 .tick-hidden {
@@ -45,9 +44,9 @@
 
 @keyframes move {
   from {
-    transform: translateY(0vh);
+    transform: translateY(0px);
   }
   to {
-    transform: translateY(-20vh);
+    transform: translateY(-48px);
   }
 }
