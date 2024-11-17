@@ -73,7 +73,8 @@ header div.olapessoa {
 
 header div.navegacao{
 	position: absolute;
-	margin-top: 4px;
+	margin-top: 10px;
+	margin-left: 38%;
 	text-align: center;
 }
 
@@ -110,7 +111,27 @@ header nav ul{
 		font-size: 20px;
 	}
 	
+	header div.navegacao{
+	position: absolute;
+	width: 100%;
+	left: 0;	
+	margin-top: 65px;
+	margin-left: 0px;
+	text-align: center;
+	height: 40px;
+	background-color: #cccccc;
+}
 	
+	#weatherDiv {
+    padding: 40px 0px 20px 20px;
+    color: white;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    transition: background-color 0.5s ease;
+	position: absolute;
+	right: 0;
+}
     
 }
 @media only screen and (min-width: 768px) {
@@ -125,6 +146,17 @@ header div.banner{
 header div.olapessoa h1{
 		font-size: 24px;
 	}	
+#weatherDiv {
+    padding: 0px 0px 20px 20px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    transition: background-color 0.5s ease;
+	position: absolute;
+	right: 0;
+}	
 	
 }
 
@@ -138,17 +170,4 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 0;
-}
-
-
-#weatherDiv {
-    padding: 0px 0px 20px 20px;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-    transition: background-color 0.5s ease;
-	position: absolute;
-	right: 0;
 }
