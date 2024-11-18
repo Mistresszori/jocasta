@@ -24,10 +24,21 @@
     align-items: center;
 }
 
+
+@media only screen and (max-width: 768px) {
 .weather-icon {
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+	.weather-icon {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 10px;
+}
 }
 
 /* Temperatura */
