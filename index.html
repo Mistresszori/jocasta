@@ -63,7 +63,45 @@
 	
 
 	</main>
-	<footer></footer>
+	<footer>
+		<h2>Player de Música</h2>
+    <ul id="playlist"></ul>
+    <p id="musicInfo">Nome da música: -- | Artista: --</p>
+    <audio id="audioPlayer" controls>
+        O seu navegador não suporta o elemento de áudio.
+    </audio>
+    <label for="volumeControl">Volume:</label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+    <script>
+        const playlist = document.getElementById('playlist');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const musicInfo = document.getElementById('musicInfo');
+        const volumeControl = document.getElementById('volumeControl');
+
+        function loadPlaylist() {
+            playlist.innerHTML = '';
+            musicas.forEach(track => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${track.name} - ${track.artist}`;
+                listItem.dataset.src = track.url;
+                listItem.dataset.name = track.name;
+                listItem.dataset.artist = track.artist;
+                listItem.addEventListener('click', () => {
+                    audioPlayer.src = listItem.dataset.src;
+                    audioPlayer.play();
+                    musicInfo.textContent = `Nome da música: ${listItem.dataset.name} | Artista: ${listItem.dataset.artist}`;
+                });
+                playlist.appendChild(listItem);
+            });
+        }
+
+        volumeControl.addEventListener('input', () => {
+            audioPlayer.volume = volumeControl.value;
+        });
+
+        loadPlaylist(); // Carrega a lista ao iniciar
+    </script>
+	</footer>
 	
 </body>
 </html>
