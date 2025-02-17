@@ -31,6 +31,16 @@
     height: 80px;
     margin-bottom: 10px;
 }
+	.weather-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+    padding: 0;
+    max-width: 350px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
 }
 
 @media only screen and (min-width: 768px) {

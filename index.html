@@ -2,106 +2,84 @@
 <html dir="ltr" lang="pt-PT">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HOME</title>
-<script type="text/javascript" src="scripts/change-bg.js"></script>
-<script type="text/javascript" src="scripts/gettempo.js"></script>
-	
-<link rel="stylesheet" type="text/css" href="css/theme.css"/>	
-<link rel="stylesheet" type="text/css" href="css/clock.css"/>	
-<link rel="stylesheet" type="text/css" href="css/tempo.css"/>	
+<script type="text/javascript" src="scripts/change-bg.js"></script> 
+<script type="text/javascript" src="scripts/gettempo.js"></script> 
+<script type="text/javascript" src="scripts/musicas.js"></script>
+<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/clock.css"/>
+<link rel="stylesheet" type="text/css" href="css/tempo.css"/>
+<link rel="stylesheet" type="text/css" href="css/music.css"/>
 </head>
 
-<body onload="changeContentByExactTime()">	
-<header>     
-      <div class="banner" id="banner">
-        <div class="menu">
-          <div class="olapessoa"><h1 id="greeting">Olá!</h1></div>
-          <div class="navegacao">
-            <nav><ul>
-              <li><a href="#">nav 1</a></li>
-              <li><a href="#">nav 2</a></li>
-              <li><a href="#">nav 3</a></li>
-            </ul></nav>
+<body onload="changeContentByExactTime()">
+<header>
+  <div class="banner" id="banner">
+    <div class="menu">
+      <div class="olapessoa">
+        <h1 id="greeting">Olá!</h1>
+      </div>
+      <div class="navegacao">
+        <nav>
+          <ul>
+            <li><a href="#">nav 1</a></li>
+            <li><a href="#">nav 2</a></li>
+            <li><a href="#">nav 3</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="relogio">
+        <div class="clock">
+          <div class="hours">
+            <div class="first">
+              <div class="number">0</div>
+            </div>
+            <div class="second">
+              <div class="number">0</div>
+            </div>
           </div>
-				<div class="relogio">
-	<div class="clock">
-                <div class="hours">
-                  <div class="first">
-                    <div class="number">0</div>
-                  </div>
-                  <div class="second">
-                    <div class="number">0</div>
-                  </div>
-                </div>
-                <div class="tick">:</div>
-                <div class="minutes">
-                  <div class="first">
-                    <div class="number">0</div>
-                  </div>
-                  <div class="second">
-                    <div class="number">0</div>
-                  </div>
-                </div>
-              </div>
-	</div>
-      </div>
-      </div>
-
-<script type="text/javascript" src="scripts/clock.js"></script>
-    </header>	
-<main>	
-<div id="weatherDiv"> <div class="weather-container">
-        <h1 class="location">Carregando localização...</h1>
-        <div class="weather-info">
-            <img src="" alt="Ícone do clima" class="weather-icon" />
-            <p class="temperature">--°C</p>
-            <p class="condition">Carregando clima...</p>
+          <div class="tick">:</div>
+          <div class="minutes">
+            <div class="first">
+              <div class="number">0</div>
+            </div>
+            <div class="second">
+              <div class="number">0</div>
+            </div>
+          </div>
         </div>
-    </div></div>
-    <script src="gettempo.js"></script>
-	
-
-	</main>
-	<footer>
-		<h2>Player de Música</h2>
-    <ul id="playlist"></ul>
-    <p id="musicInfo">Nome da música: -- | Artista: --</p>
-    <audio id="audioPlayer" controls>
-        O seu navegador não suporta o elemento de áudio.
-    </audio>
-    <label for="volumeControl">Volume:</label>
-    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
-    <script>
-        const playlist = document.getElementById('playlist');
-        const audioPlayer = document.getElementById('audioPlayer');
-        const musicInfo = document.getElementById('musicInfo');
-        const volumeControl = document.getElementById('volumeControl');
-
-        function loadPlaylist() {
-            playlist.innerHTML = '';
-            musicas.forEach(track => {
-                const listItem = document.createElement('li');
-                listItem.textContent = `${track.name} - ${track.artist}`;
-                listItem.dataset.src = track.url;
-                listItem.dataset.name = track.name;
-                listItem.dataset.artist = track.artist;
-                listItem.addEventListener('click', () => {
-                    audioPlayer.src = listItem.dataset.src;
-                    audioPlayer.play();
-                    musicInfo.textContent = `Nome da música: ${listItem.dataset.name} | Artista: ${listItem.dataset.artist}`;
-                });
-                playlist.appendChild(listItem);
-            });
-        }
-
-        volumeControl.addEventListener('input', () => {
-            audioPlayer.volume = volumeControl.value;
-        });
-
-        loadPlaylist(); // Carrega a lista ao iniciar
-    </script>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/clock.js"></script> 
+</header>
+<main>
+  <div id="weatherDiv">
+    <div class="weather-container">
+      <h1 class="location">Carregando localização...</h1>
+      <div class="weather-info"> <img src="" alt="Ícone do clima" class="weather-icon" />
+        <p class="temperature">--°C</p>
+        <p class="condition">Carregando clima...</p>
+      </div>
+    </div>
+  </div>
+  <script src="gettempo.js"></script> 
+</main>
+<footer>
+	 <div class="music-list" id="musicList"></div>
+    <div class="player-container">
+        <div class="music-info">
+            <img id="cover" src="" alt="Capa da música">
+            <span id="musicTitle">Nenhuma música selecionada</span>
+        </div>
+        <div class="controls">
+            <button onclick="playPause()">▶️/⏸️</button>
+            <button onclick="stopMusic()">⏹️</button>
+            <input type="range" id="volume" min="0" max="1" step="0.1" onchange="setVolume(this.value)">
+        </div>
+    </div>
+    <audio id="audioPlayer" onended="nextMusic()"></audio>
 	</footer>
-	
 </body>
 </html>
