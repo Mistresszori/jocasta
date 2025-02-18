@@ -1,7 +1,7 @@
 // JavaScript Document
  const musicList = [
             { title: "De manhã Carlos à noite Clarisse", file: "musicas/De-manha-Carlos-a-noite-Clarisse.mp3", cover: "musicas/capas/Clarisse.jpeg" },
-            { title: "Pinguim Maroto", file: "musicas/pinguim.mp3", cover: "musicas/capas/Pinguim.webp" },
+            { title: "Pinguim Maroto", file: "musicas/Pinguim.mp3", cover: "musicas/capas/Pinguim.webp" },
             { title: "Hora da Pilha", file: "musicas/Hora-da-pilha.mp3", cover: "musicas/capas/Pilhas-duracell.jpeg" }
         ];
 
