@@ -1,5 +1,8 @@
 // JavaScript Document
  const musicList = [
+            { title: "Pum Pas Tras", file: "musicas/Pum-pas-tras.mp3", cover: "musicas/capas/pum-pas-tras.jpeg" },
+            { title: "História de Encantar Moderna", file: "musicas/historia-de-encantar-moderna.mp3", cover: "musicas/capas/historia-de-encantar.webp" },
+            { title: "Abacaxi Homicida", file: "musicas/abacaxi-homicida.mp3", cover: "musicas/capas/abacaxi-homicida.webp" },
             { title: "Telmo o Viquingue", file: "musicas/Telmo-viquingue.mp3", cover: "musicas/capas/Telmo.jpeg" },
             { title: "De manhã Carlos à noite Clarisse", file: "musicas/De-manha-Carlos-a-noite-Clarisse.mp3", cover: "musicas/capas/Clarisse.jpeg" },
             { title: "Pinguim Maroto", file: "musicas/Pinguim.mp3", cover: "musicas/capas/Pinguim.webp" },
