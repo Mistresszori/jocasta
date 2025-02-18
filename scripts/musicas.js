@@ -1,8 +1,8 @@
 // JavaScript Document
  const musicList = [
-            { title: "Música 1", file: "musicas/De-manha-Carlos-a-noite-Clarisse.mp3", cover: "musicas/capas/Pinguim.webp" },
-            { title: "Música 2", file: "musicas/pinguim.mp3", cover: "capa2.jpg" },
-            { title: "Música 3", file: "musica3.mp3", cover: "capa3.jpg" }
+            { title: "De manhã Carlos à noite Clarisse", file: "musicas/De-manha-Carlos-a-noite-Clarisse.mp3", cover: "musicas/capas/Clarisse.jpeg" },
+            { title: "Pinguim Maroto", file: "musicas/pinguim.mp3", cover: "musicas/capas/Pinguim.webp" },
+            { title: "Hora da Pilha", file: "musicas/Hora-da-pilha.mp3", cover: "musicas/capas/Pilhas-duracell.jpeg" }
         ];
 
         const audio = document.getElementById("audioPlayer");
@@ -16,6 +16,18 @@
             cover.src = music.cover;
             musicTitle.innerText = music.title;
             audio.play();
+            highlightPlaying(index);
+        }
+
+        function highlightPlaying(index) {
+            const items = document.querySelectorAll(".music-list div");
+            items.forEach((item, i) => {
+                if (i === index) {
+                    item.classList.add("playing");
+                } else {
+                    item.classList.remove("playing");
+                }
+            });
         }
 
         function playPause() {
