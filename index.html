@@ -6,7 +6,9 @@
 <title>HOME</title>
 <script type="text/javascript" src="scripts/change-bg.js"></script> 
 <script type="text/javascript" src="scripts/gettempo.js"></script> 
-<script type="text/javascript" src="scripts/musicas.js"></script>
+<script type="text/javascript" src="scripts/musicas.js" defer></script>
+
+	
 <link rel="stylesheet" type="text/css" href="css/theme.css"/>
 <link rel="stylesheet" type="text/css" href="css/clock.css"/>
 <link rel="stylesheet" type="text/css" href="css/tempo.css"/>
@@ -20,7 +22,7 @@
       <div class="olapessoa">
         <h1 id="greeting">Olá!</h1>
       </div>
-      <div class="navegacao">
+      <!--div class="navegacao">
         <nav>
           <ul>
             <li><a href="#">nav 1</a></li>
@@ -28,7 +30,7 @@
             <li><a href="#">nav 3</a></li>
           </ul>
         </nav>
-      </div>
+      </div-->
       <div class="relogio">
         <div class="clock">
           <div class="hours">
@@ -55,6 +57,7 @@
   <script type="text/javascript" src="scripts/clock.js"></script> 
 </header>
 <main>
+	<div class="music-list" id="musicList"></div>
   <div id="weatherDiv">
     <div class="weather-container">
       <h1 class="location">Carregando localização...</h1>
@@ -67,11 +70,11 @@
   <script src="gettempo.js"></script> 
 </main>
 <footer>
-	 <div class="music-list" id="musicList"></div>
+	 
     <div class="player-container">
         <div class="music-info">
-            <img id="cover" src="" alt="Capa da música">
-            <span id="musicTitle">Nenhuma música selecionada</span>
+            <img id="cover" src="musicas/capas/no-music.png" alt="Capa da música">
+            <span id="musicTitle" class="leftspace">Nenhuma música selecionada</span>
         </div>
         <div class="controls">
             <button onclick="playPause()">▶️/⏸️</button>

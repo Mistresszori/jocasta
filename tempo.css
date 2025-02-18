@@ -1,0 +1,104 @@
+/* Container principal */
+.weather-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 15px;
+    text-align: center;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+/* Localização */
+.location {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Ícones */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+.weather-icon {
+	left: 25px;
+	top: 25px;
+    width: 90px;
+    height: 90px;
+	position: absolute;
+}
+	.weather-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+.location {
+    padding-top: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}	
+.temperature {
+    font-size: 2rem !important;
+
+}	
+.condition {
+    font-size: 1rem !important;
+	margin-top: 2px !important;
+}	
+}
+
+@media only screen and (min-width: 768px) {
+	.weather-icon {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 10px;
+}
+}
+
+/* Temperatura */
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #2e26ff;
+}
+
+/* Condição */
+.condition {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Tema do dia */
+body.day {
+    background-color: #87cefa; /* Azul claro */
+    color: #333;
+}
+
+.weather-container.day {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Tema da noite */
+body.night {
+    background-color: #2c3e50; /* Azul escuro */
+    color: #333;
+}
+
+.weather-container.night {
+    background-color: #34495e;
+    color: #333;
+}
