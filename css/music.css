@@ -43,7 +43,7 @@
             width: 100%;
             background: #333;
             padding: 10px;
-            max-height: 150px;
+            /*max-height: 150px;*/
             overflow-y: auto;
         }
         .music-list div {
