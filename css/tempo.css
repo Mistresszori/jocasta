@@ -27,9 +27,11 @@
 
 @media only screen and (max-width: 768px) {
 .weather-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
+	left: 25px;
+	top: 25px;
+    width: 90px;
+    height: 90px;
+	position: absolute;
 }
 	.weather-container {
     background-color: #ffffff;
@@ -37,10 +39,23 @@
     border-radius: 0px 0px 0px 0px;
     text-align: center;
     padding: 0;
-    max-width: 350px;
+    max-width: 100%;
     width: 100%;
     transition: background-color 0.5s ease;
 }
+.location {
+    padding-top: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}	
+.temperature {
+    font-size: 2rem !important;
+
+}	
+.condition {
+    font-size: 1rem !important;
+	margin-top: 2px !important;
+}	
 }
 
 @media only screen and (min-width: 768px) {

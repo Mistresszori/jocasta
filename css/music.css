@@ -13,15 +13,22 @@
             justify-content: space-between;
         }
         .music-info {
-            display: flex;
+			display: flex;
             align-items: center;
+			font-size: 20px;
         }
         .music-info img {
-            width: 50px;
-            height: 50px;
+			position: absolute;
+            width: 150px;
+            height: 150px;
             margin-right: 10px;
             border-radius: 5px;
+			bottom: 10px;
         }
+.leftspace {
+	padding-left: 170px;
+}
+
         .controls button {
             background: none;
             border: none;
@@ -30,8 +37,9 @@
             cursor: pointer;
         }
         .music-list {
-            position: fixed;
-            bottom: 60px;
+            position: absolute;
+			color: #fff;
+            top: 70px;
             width: 100%;
             background: #333;
             padding: 10px;
@@ -45,3 +53,26 @@
         .music-list div:hover {
             background: #444;
         }
+ .music-list .playing {
+            background: #555;
+            font-weight: bold;
+        }
+
+@media only screen and (max-width: 768px) {
+	.music-list {
+    top: 176px;
+	}
+	
+	.music-info {
+		padding-bottom: 40px;
+		font-size: 15px;
+	}
+	
+	.controls{
+	position: absolute;
+    right: 10px;
+	bottom: 10px;
+	}
+	
+}
+

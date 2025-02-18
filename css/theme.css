@@ -124,10 +124,10 @@ header nav ul{
 	
 	#weatherDiv {
     padding: 0px 0px 0px 0px;
+	margin-top: -16px;	
     color: white;
     text-align: center;
     width: 100%;
-    margin: 0 auto;
     transition: background-color 0.5s ease;
 	position: absolute;
 	right: 0;
@@ -147,12 +147,11 @@ header div.olapessoa h1{
 		font-size: 24px;
 	}	
 #weatherDiv {
-    padding: 0px 0px 20px 20px;
     font-size: 18px;
+	margin-top: 0px;
     color: white;
     text-align: center;
     width: 300px;
-    margin: 0 auto;
     transition: background-color 0.5s ease;
 	position: absolute;
 	right: 0;
