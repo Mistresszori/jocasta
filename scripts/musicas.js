@@ -5,7 +5,7 @@
             { title: "História de Encantar Moderna", file: "musicas/historia-de-encantar-moderna.mp3", cover: "musicas/capas/historia-de-encantar.webp" },
             { title: "Abacaxi Homicida", file: "musicas/abacaxi-homicida.mp3", cover: "musicas/capas/abacaxi-homicida.webp" },
             { title: "Telmo o Viquingue", file: "musicas/Telmo-viquingue.mp3", cover: "musicas/capas/Telmo.jpeg" },
-            { title: "De manhã Carlos à noite Clarisse", file: "musicas/De-manha-Carlos-a-noite-Clarisse.mp3", cover: "musicas/capas/Clarisse.jpeg" },
+            { title: "De manhã Carlos à noite Clarisse", file: "musicas/De-manha-Carlos-a-noite-Clarisse.mp3", cover: "musicas/capas/Clarisse.jfif" },
             { title: "Pinguim Maroto", file: "musicas/Pinguim.mp3", cover: "musicas/capas/Pinguim.jfif" },
             { title: "Hora da Pilha", file: "musicas/Hora-da-pilha.mp3", cover: "musicas/capas/Pilhas-duracell.jfif" }
         ];
