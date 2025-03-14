@@ -1,5 +1,6 @@
 // JavaScript Document
  const musicList = [
+            { title: "É assim que nasce o Atum em lata crianças!", file: "musicas/E-assim-que-nasce-o-atum.mpeg", cover: "musicas/capas/E-assim-que-nasce-o-atum.jfif" },
             { title: "Pum Pas Tras", file: "musicas/Pum-pas-tras.mp3", cover: "musicas/capas/pum-pas-tras.jpeg" },
             { title: "História de Encantar Moderna", file: "musicas/historia-de-encantar-moderna.mp3", cover: "musicas/capas/historia-de-encantar.webp" },
             { title: "Abacaxi Homicida", file: "musicas/abacaxi-homicida.mp3", cover: "musicas/capas/abacaxi-homicida.webp" },
